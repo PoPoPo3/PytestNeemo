@@ -2,8 +2,7 @@ import pytest
 from playwright.sync_api import Playwright, sync_playwright, expect
 
 
-@pytest.fixture()
-def set_up_tear_down(page) -> None:
+def test_login_with_standard_user(page) -> None:
     page.goto("https://www.saucedemo.com/")
 
     # Login
@@ -11,10 +10,5 @@ def set_up_tear_down(page) -> None:
     page.locator("#password").fill("secret_sauce")
     page.locator("#login-button").click()
 
-    yield page
-
-
-@pytest.fixture()
-def set_up_tear_down_no_login(page) -> None:
-    page.goto("https://www.saucedemo.com/")
-    yield page
+    products_header = page.locator("//span[text()='Products']")
+    assert products_header.is_visible(), "User unable to login"

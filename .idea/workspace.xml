@@ -1,11 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="8945e8a2-6d49-49ce-93ff-409c9ccf4ee8" name="Changes" comment="" />
+    <list default="true" id="8945e8a2-6d49-49ce-93ff-409c9ccf4ee8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/dvepalochki/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dvepalochki/src/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dvepalochki/src/pages/Basket.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dvepalochki/src/pages/LoginPage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dvepalochki/src/pages/Menu.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dvepalochki/src/pages/OrderPage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dvepalochki/src/pages/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dvepalochki/tests/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dvepalochki/tests/authorisation/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dvepalochki/tests/authorisation/test_login.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dvepalochki/tests/menu/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dvepalochki/tests/menu/test_addToCard.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dvepalochki/tests/menu/test_goBasket.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dvepalochki/tests/order/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dvepalochki/tests/order/test_orderCard.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dvepalochki/tests/order/test_orderCash.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dvepalochki/tests/profile/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytest_fw/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/pytest_fw/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pytest_fw/test_01_sauce_demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/pytest_fw/test_01_sauce_demo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/orders.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/orders.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -14,18 +47,78 @@
   "associatedIndex": 1
 }]]></component>
   <component name="ProjectId" id="2epvB2uzDorWLdHHIjyVlBfMx1T" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python tests.Python tests for test_01_sauce_demo.test_01_login_with_invalid_credentials.executor": "Run",
+    "Python tests.Python tests for test_login.test_login_with_standard_user.executor": "Run",
+    "Python tests.Python tests for test_mytest_script.test_example.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+    "git-widget-placeholder": "main"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Python tests for dvepalochki.tests.authorisation.test_login.test_login_with_standard_user" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="pythonPyTest" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dvepalochki/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;dvepalochki.tests.authorisation.test_login.test_login_with_standard_user&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for pytest_fw.xtest_02_my_script.test_example" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="pythonPyTest" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pytest_fw" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;pytest_fw.xtest_02_my_script.test_example&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_01_sauce_demo.test_01_login_with_invalid_credentials" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="pythonPyTest" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pytest_fw" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_01_sauce_demo.test_01_login_with_invalid_credentials&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests for dvepalochki.tests.authorisation.test_login.test_login_with_standard_user" />
+        <item itemvalue="Python tests.Python tests for test_01_sauce_demo.test_01_login_with_invalid_credentials" />
+        <item itemvalue="Python tests.Python tests for pytest_fw.xtest_02_my_script.test_example" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -43,5 +136,8 @@
       <updated>1712614195075</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
