@@ -12,27 +12,30 @@ def test_login_with_standard_user(set_up_tear_down) -> None:
     expect(products_p._products_header).to_have_text("Products")
 
 
-def xtest_login_with_invalid_user(page) -> None:
-    page.goto("https://www.saucedemo.com/")
-
-    # Login invalid user
-    page.locator("#user-name").fill("invalid_user")
-    page.locator("#password").fill("secret_sauce")
-    page.locator("#login-button").click()
+def test_login_with_invalid_user(set_up_tear_down) -> None:
+    page = set_up_tear_down
+    credentials = {'username': 'invalid_user', 'password': 'secret_sauce'}
+    # Login
+    login_p = LoginPage(page)
+    login_p.do_login(credentials)
 
     expected_fail_msg = "Username and password do not match any user in this service"
-    err_smg_locator = page.locator("//h3[@data-test='error']")
 
-    expect(err_smg_locator).to_contain_text(expected_fail_msg)
+    expect(login_p._error_massage).to_contain_text(expected_fail_msg)
 
 
-def xtest_login_with_empty_user(page) -> None:
-    page.goto("https://www.saucedemo.com/")
-
-    # Login empty user
-    page.locator("#login-button").click()
+def test_login_with_empty_user(set_up_tear_down) -> None:
+    page = set_up_tear_down
+    # Login
+    login_p = LoginPage(page)
+    login_p.click_login()
 
     expected_fail_msg = "Username is required"
-    err_smg_locator = page.locator("//h3[@data-test='error']")
+    expect(login_p.err_msg_loc).to_contain_text(expected_fail_msg)
 
-    expect(err_smg_locator).to_contain_text(expected_fail_msg)
+
+def test_access_inventory_without_login(set_up_tear_down) -> None:
+    page = set_up_tear_down
+    page.goto("https://www.saucedemo.com/inventory.html")
+    login_p = LoginPage(page)
+    expect(login_p.err_msg_loc).to_contain_text("You can only access '/inventory.html' when you are logged in.")

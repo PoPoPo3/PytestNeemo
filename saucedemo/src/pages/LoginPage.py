@@ -8,6 +8,7 @@ class LoginPage:
         self._username = page.get_by_placeholder("Username")
         self._password = page.get_by_placeholder("Password")
         self._login_btn = page.get_by_text("Login")
+        self._error_massage = page.locator("//h3[@data-test='error']")
 
     def enter_username(self, u_name):
         self._username.clear()
@@ -25,3 +26,12 @@ class LoginPage:
         self.enter_password(credentials['password'])
         self.click_login()
         return ProductListPage(self.page)
+
+    @property
+    def err_msg_loc(self):
+        return self._error_massage
+
+    @property
+    def login_button(self):
+        return self._login_btn
+

@@ -4,12 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8945e8a2-6d49-49ce-93ff-409c9ccf4ee8" name="Changes" comment="Login + Logout tests">
-      <change afterPath="$PROJECT_DIR$/saucedemo/tests/login/conftest.py" afterDir="false" />
+    <list default="true" id="8945e8a2-6d49-49ce-93ff-409c9ccf4ee8" name="Changes" comment="Lesson 3">
+      <change afterPath="$PROJECT_DIR$/saucedemo/src/pages/CartPage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/saucedemo/src/pages/CheckoutPage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/saucedemo/tests/cart/test_add_to_cart.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/saucedemo/tests/checkout/test_place_order.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saucedemo/src/pages/Basket.py" beforeDir="false" afterPath="$PROJECT_DIR$/saucedemo/tests/cart/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/saucedemo/src/pages/LoginPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/saucedemo/src/pages/LoginPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/saucedemo/src/pages/Menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/saucedemo/src/pages/ProductListPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saucedemo/src/pages/OrderPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/saucedemo/tests/checkout/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saucedemo/src/pages/ProductListPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/saucedemo/src/pages/ProductListPage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/saucedemo/tests/login/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/saucedemo/tests/login/test_login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saucedemo/tests/login/test_logout.py" beforeDir="false" afterPath="$PROJECT_DIR$/saucedemo/tests/login/test_logout.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,10 +50,13 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Python tests.Python tests for test_01_sauce_demo.test_01_login_with_invalid_credentials.executor": "Run",
+    "Python tests.Python tests for test_login.test_access_inventory_without_login.executor": "Run",
     "Python tests.Python tests for test_login.test_login_with_invalid_user.executor": "Run",
     "Python tests.Python tests for test_login.test_login_with_standard_user.executor": "Run",
     "Python tests.Python tests for test_logout.test_login_with_standard_user.executor": "Run",
     "Python tests.Python tests for test_mytest_script.test_example.executor": "Run",
+    "Python tests.Python tests for test_product_list.test_add_to_cart.executor": "Run",
+    "Python tests.Python tests for test_product_list.test_remove_product_from_cart.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main"
@@ -55,12 +64,13 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/saucedemo/tests/cart" />
       <recent name="$PROJECT_DIR$/dvepalochki/tests/order" />
       <recent name="$PROJECT_DIR$/dvepalochki/tests/menu" />
       <recent name="$PROJECT_DIR$/dvepalochki/tests/authorisation" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_login.test_login_with_standard_user">
+  <component name="RunManager">
     <configuration name="Python tests for dvepalochki.tests.authorisation.test_login.test_login_with_standard_user" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonPyTest" />
       <option name="ENV_FILES" value="" />
@@ -91,7 +101,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for saucedemo.tests.login.test_login.test_login_with_standard_user" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for saucedemo.tests.cart.test_add_to_cart.test_add_to_cart" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonPyTest" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -102,26 +112,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;saucedemo.tests.login.test_login.test_login_with_standard_user&quot;" />
+      <option name="_new_target" value="&quot;saucedemo.tests.cart.test_add_to_cart.test_add_to_cart&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_01_sauce_demo.test_01_login_with_invalid_credentials" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="pythonPyTest" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pytest_fw" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_01_sauce_demo.test_01_login_with_invalid_credentials&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_login.test_login_with_invalid_user" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for saucedemo.tests.cart.test_add_to_cart.test_remove_product_from_cart" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonPyTest" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -132,7 +127,22 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_login.test_login_with_invalid_user&quot;" />
+      <option name="_new_target" value="&quot;saucedemo.tests.cart.test_add_to_cart.test_remove_product_from_cart&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_login.test_access_inventory_without_login" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="pythonPyTest" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/saucedemo/tests/login" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_login.test_access_inventory_without_login&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -168,11 +178,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for saucedemo.tests.cart.test_add_to_cart.test_remove_product_from_cart" />
+        <item itemvalue="Python tests.Python tests for saucedemo.tests.cart.test_add_to_cart.test_add_to_cart" />
+        <item itemvalue="Python tests.Python tests for test_login.test_access_inventory_without_login" />
         <item itemvalue="Python tests.Python tests for test_login.test_login_with_standard_user" />
         <item itemvalue="Python tests.Python tests for test_logout.test_login_with_standard_user" />
-        <item itemvalue="Python tests.Python tests for test_login.test_login_with_invalid_user" />
-        <item itemvalue="Python tests.Python tests for saucedemo.tests.login.test_login.test_login_with_standard_user" />
-        <item itemvalue="Python tests.Python tests for dvepalochki.tests.login.test_login.test_login_with_standard_user" />
       </list>
     </recent_temporary>
   </component>
@@ -208,13 +218,22 @@
       <option name="project" value="LOCAL" />
       <updated>1712871545449</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Lesson 3">
+      <option name="closed" value="true" />
+      <created>1713118559283</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1713118559283</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="POM Template" />
     <MESSAGE value="Login + Logout tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Login + Logout tests" />
+    <MESSAGE value="Lesson 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 3" />
   </component>
 </project>

@@ -1,22 +1,15 @@
 import pytest
 from playwright.sync_api import Playwright, sync_playwright, expect
+from saucedemo.src.pages.LoginPage import LoginPage
+from saucedemo.src.pages.ProductListPage import ProductListPage
 
 
-def test_login_with_standard_user(page) -> None:
-    page.goto("https://www.saucedemo.com/")
+def test_logout(set_up_tear_down) -> None:
+    page = set_up_tear_down
+    credentials = {'username': 'standard_user', 'password': 'secret_sauce'}
     # Login
-    page.locator("#user-name").fill("standard_user")
-    page.locator("#password").fill("secret_sauce")
-    page.locator("#login-button").click()
+    login_p = LoginPage(page)
+    products_p = login_p.do_login(credentials)
+    products_p.do_logout()
 
-    products_header = page.locator("span.title")
-    expect(products_header).to_have_text("Products")
-
-    burger_menu = page.locator("#react-burger-menu-btn")
-    burger_menu.click()
-
-    logout_button = page.locator("#logout_sidebar_link")
-    logout_button.click()
-
-    homepage_logo = page.locator("//div[@class='login_logo']")
-    expect(homepage_logo).to_contain_text("Swag Labs")
+    expect(login_p.login_button).to_have_text("Login")
