@@ -5,15 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8945e8a2-6d49-49ce-93ff-409c9ccf4ee8" name="Changes" comment="Lesson 3">
-      <change afterPath="$PROJECT_DIR$/saucedemo/src/pages/CartPage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/saucedemo/src/pages/CheckoutPage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/saucedemo/tests/cart/test_add_to_cart.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/saucedemo/tests/checkout/test_place_order.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/saucedemo/src/pages/Basket.py" beforeDir="false" afterPath="$PROJECT_DIR$/saucedemo/tests/cart/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/saucedemo/src/pages/LoginPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/saucedemo/src/pages/LoginPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/saucedemo/src/pages/OrderPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/saucedemo/tests/checkout/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/saucedemo/src/pages/ProductListPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/saucedemo/src/pages/ProductListPage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saucedemo/src/pages/CartPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/saucedemo/src/pages/CartPage1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saucedemo/src/pages/CheckoutPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/saucedemo/src/pages/CheckoutPage1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saucedemo/src/pages/LoginPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/saucedemo/src/pages/LoginPage1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saucedemo/src/pages/ProductListPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/saucedemo/src/pages/ProductListPage1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saucedemo/tests/cart/test_add_to_cart.py" beforeDir="false" afterPath="$PROJECT_DIR$/saucedemo/tests/cart/test_add_to_cart.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saucedemo/tests/checkout/test_place_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/saucedemo/tests/checkout/test_place_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saucedemo/tests/login/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/saucedemo/tests/conftest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/saucedemo/tests/login/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/saucedemo/tests/login/test_login.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/saucedemo/tests/login/test_logout.py" beforeDir="false" afterPath="$PROJECT_DIR$/saucedemo/tests/login/test_logout.py" afterDir="false" />
     </list>
@@ -35,9 +34,9 @@
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2epvB2uzDorWLdHHIjyVlBfMx1T" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -55,6 +54,7 @@
     "Python tests.Python tests for test_login.test_login_with_standard_user.executor": "Run",
     "Python tests.Python tests for test_logout.test_login_with_standard_user.executor": "Run",
     "Python tests.Python tests for test_mytest_script.test_example.executor": "Run",
+    "Python tests.Python tests for test_place_order.test_place_order.executor": "Run",
     "Python tests.Python tests for test_product_list.test_add_to_cart.executor": "Run",
     "Python tests.Python tests for test_product_list.test_remove_product_from_cart.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -64,43 +64,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/saucedemo/tests" />
+      <recent name="$PROJECT_DIR$/saucedemo/tests/order" />
+      <recent name="$PROJECT_DIR$/saucedemo/tests/checkout" />
       <recent name="$PROJECT_DIR$/saucedemo/tests/cart" />
       <recent name="$PROJECT_DIR$/dvepalochki/tests/order" />
-      <recent name="$PROJECT_DIR$/dvepalochki/tests/menu" />
-      <recent name="$PROJECT_DIR$/dvepalochki/tests/authorisation" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Python tests for dvepalochki.tests.authorisation.test_login.test_login_with_standard_user" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="pythonPyTest" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dvepalochki/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;dvepalochki.tests.authorisation.test_login.test_login_with_standard_user&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for dvepalochki.tests.login.test_login.test_login_with_standard_user" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="pythonPyTest" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dvepalochki/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;dvepalochki.tests.login.test_login.test_login_with_standard_user&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Python tests for test_place_order.test_place_order">
     <configuration name="Python tests for saucedemo.tests.cart.test_add_to_cart.test_add_to_cart" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonPyTest" />
       <option name="ENV_FILES" value="" />
@@ -161,28 +132,28 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_logout.test_login_with_standard_user" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_place_order.test_place_order" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="pythonPyTest" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/saucedemo/tests/login" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/saucedemo/tests/checkout" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_logout.test_login_with_standard_user&quot;" />
+      <option name="_new_target" value="&quot;test_place_order.test_place_order&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_place_order.test_place_order" />
         <item itemvalue="Python tests.Python tests for saucedemo.tests.cart.test_add_to_cart.test_remove_product_from_cart" />
         <item itemvalue="Python tests.Python tests for saucedemo.tests.cart.test_add_to_cart.test_add_to_cart" />
         <item itemvalue="Python tests.Python tests for test_login.test_access_inventory_without_login" />
         <item itemvalue="Python tests.Python tests for test_login.test_login_with_standard_user" />
-        <item itemvalue="Python tests.Python tests for test_logout.test_login_with_standard_user" />
       </list>
     </recent_temporary>
   </component>
@@ -226,7 +197,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713118559283</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Lesson 3">
+      <option name="closed" value="true" />
+      <created>1713135737276</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1713135737276</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

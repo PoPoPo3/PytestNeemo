@@ -7,7 +7,7 @@ def test_add_to_cart(set_up_tear_down) -> None:
     page = set_up_tear_down
     credentials = {'username': 'standard_user', 'password': 'secret_sauce'}
     # Login
-    login_p = LoginPage(page)
+    login_p = LoginPagee(page)
     products_p = login_p.do_login(credentials)
     expect(products_p._products_header).to_have_text("Products")
 
@@ -21,7 +21,7 @@ def test_remove_product_from_cart(set_up_tear_down) -> None:
     page = set_up_tear_down
     credentials = {'username': 'standard_user', 'password': 'secret_sauce'}
     # Login
-    login_p = LoginPage(page)
+    login_p = LoginPagee(page)
     products_p = login_p.do_login(credentials)
     expect(products_p._products_header).to_have_text("Products")
 

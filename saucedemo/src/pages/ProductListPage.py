@@ -1,7 +1,7 @@
+from saucedemo.src.pages.CartPage import CartPage
 
 
 class ProductListPage:
-
     def __init__(self, page):
         self.page = page
         self._products_header = page.locator("span.title")
@@ -9,6 +9,7 @@ class ProductListPage:
         self._logout_btn = page.locator("#logout_sidebar_link")
         self._add_to_card = page.locator("//div[text()='Sauce Labs Bike Light']/ancestor::div[@class='inventory_item_label']/following-sibling::div//button")
         self._cart_icon = page.locator("a.shopping_cart_link")
+
     @property
     def product_header(self):
         return self._product_header
@@ -30,7 +31,7 @@ class ProductListPage:
         self.get_add_remove_cart_locator(product).click()
         return self
 
-    def click_card_icon(self):
+    def click_cart_icon(self):
         self._cart_icon.click()
         return CartPage(self.page)
 
